@@ -1,2 +1,6 @@
 env-activate.sh
 dataset/ 
+*.png
+model/
+preprocess/
+__pycache__/ 

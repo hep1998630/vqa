@@ -1,0 +1,27 @@
+
+
+
+Now I am reading the vqa paper. It seems I can define the vqa task as a multi label cls problem. However, I will try to train a model that gives open ended answers (generative). 
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Update: 
+- I finished exploring the dataset including visualization of imges, questions and answers. 
+- I preprocessed the questions and answers and prepared them for training. 
+- I will start by using pretrained CNN and bert for feature extraction, then using a classifier head that takes the concatenation as an input. 
+- I need to prepare a dataset class, and write the training loop now. 
+
+
+Update, Feb 16: 
+- I finished writing utils to read questions, answers, and images. 
+- Defined dataset class using pytorch. 
+- Defined dataloaders for train and val. 
+- Next step is to write the training loop. It should include the following: 
+    - bert model and tokenizer that takes wuestions. 
+    - CNN model (effecientntet) that takes images. 
+    - Classifier model to classify based on features. 
+    - Loss, optimizer, ...etc. 
+    
+
